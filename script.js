@@ -1,4 +1,5 @@
 let apiKey = "1aa1434561b544a4a33101356242003";
+let unspKey = "c9W1d8waN6Pcad2klzSscYkEtmjo7NghNk0uPXEO7uo";
 let button = document.querySelector(".searchButton");
 let input = document.querySelector("#searchbar");
 let h1 = document.querySelector("h1");
@@ -12,7 +13,7 @@ Chart.defaults.borderColor = "rgba(255,255,255,0.2)";
 Chart.defaults.color = "#FFF";
 function loadData() {
   fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input.value}&days=5&aqi=no&alerts=no`
+    `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input.value}&days=5&aqi=no&alerts=no`
   )
     .then((response) => response.json())
     .then((data) => {
@@ -116,12 +117,17 @@ function loadData() {
         daysContainer.appendChild(div);
       });
     });
+  fetch(
+    `https://api.unsplash.com/photos/?page=1&query=${input.value}?client_id=${unspKey}`
+  )
+    .then((response) => response.json())
+    .then((data) => console.log(data));
 }
 button.addEventListener("click", () => {
   loadData();
 });
 
-//On enter
+//CHART
 const node = document.querySelector("#searchbar");
 node.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
