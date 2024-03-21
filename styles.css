@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+    color: #fff;
+    background-repeat: no-repeat;
+}
+main{
+    padding: 16px;
+    text-align: center;
+}
+.sectionDays{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+}
+.daysContainer{
+    margin-top: 18px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+}
+.iconSmall{
+    width: 50px;
+}
+.mainImg{
+
+    margin-top: 30px;
+    width: 200px;
+    height: auto;
+}
+.searchBar{
+    border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 4px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(15px);
+}
+.searchButton{
+    border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 4px;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(15px);
+}
+.dayContainer{
+    padding: 8px;
+    font-size: 12px;
+}
+.dayContainer p{
+    font-size: 8px;
+}

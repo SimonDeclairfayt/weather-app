@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="searchbar-container">
+          <input type="text" name="" id="searchbar" class="searchBar" />
+          <button class="searchButton">Search</button>
+        </div>
+        <img class="mainImg" src="" alt="" />
+        <h1 class="title">Select a city to start</h1>
+        <h2><span class="avgtemp"></span>°C</h2>
+
+        <div class="chartContainer">
+          <canvas id="chart"></canvas>
+        </div>
+      </section>
+      <section class="sectionDays">
+        <div class="daysContainer"></div>
+      </section>
+    </main>
+  </body>
+</html>
