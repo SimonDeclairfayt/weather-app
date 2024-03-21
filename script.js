@@ -12,7 +12,7 @@ Chart.defaults.borderColor = "rgba(255,255,255,0.2)";
 Chart.defaults.color = "#FFF";
 function loadData() {
   fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input.value}&days=5&aqi=no&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${input.value}&days=5&aqi=no&alerts=no`
   )
     .then((response) => response.json())
     .then((data) => {
