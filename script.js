@@ -121,7 +121,7 @@ button.addEventListener("click", () => {
   loadData();
 });
 
-//CHART
+//On enter
 const node = document.querySelector("#searchbar");
 node.addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
